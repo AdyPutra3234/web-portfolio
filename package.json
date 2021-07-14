@@ -1,0 +1,27 @@
+{
+  "name": "webportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode=development",
+    "build": "webpack"
+  },
+  "author": "Adi",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "aos": "^3.0.0-beta.6",
+    "gsap": "^3.7.0",
+    "webpack-merge": "^5.8.0"
+  }
+}

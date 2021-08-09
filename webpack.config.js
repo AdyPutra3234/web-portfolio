@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
+
 const path = require('path');
 
 module.exports = {
@@ -36,6 +38,17 @@ module.exports = {
                     to: path.resolve(__dirname, 'dist'),
                 },
             ],
+        }),
+
+        new ImageminWebpackPlugin({
+           pngquant: {
+               quality: '50',
+               progressive: true,
+           },
+           svgo: {
+               quality: '50',
+               progressive: true,
+           },
         }),
     ],
 };
